@@ -6,12 +6,11 @@ import Footer from './components/Footer.jsx';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-950 text-white selection:bg-purple-500/30 selection:text-white">
-      {/* Glow background accents */}
-      <div className="pointer-events-none fixed inset-0 blur-3xl" aria-hidden>
-        <div className="absolute -top-32 left-1/2 h-72 w-72 -translate-x-1/2 rounded-full bg-purple-600/20" />
-        <div className="absolute top-1/3 right-12 h-64 w-64 rounded-full bg-cyan-500/10" />
-        <div className="absolute bottom-10 left-10 h-56 w-56 rounded-full bg-fuchsia-500/10" />
+    <div className="min-h-screen bg-slate-950 selection:bg-teal-300/30 selection:text-white">
+      {/* Glow backdrop layers */}
+      <div className="pointer-events-none fixed inset-0 -z-[1]">
+        <div className="absolute -left-20 top-10 h-80 w-80 rounded-full bg-teal-500/20 blur-3xl" />
+        <div className="absolute bottom-10 right-0 h-72 w-72 rounded-full bg-indigo-500/10 blur-3xl" />
       </div>
 
       <Hero />
